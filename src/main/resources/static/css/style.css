@@ -1,0 +1,65 @@
+form {
+    /* display: flex; */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    align-items: baseline;
+}
+
+  label {
+    /* display: block; */
+    /* margin-bottom: 10px; */
+    font-weight: bold;
+  }
+  
+  input {
+    /* padding: 10px; */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0069d9;
+  }
+  
+
+  .navbar {
+    /* outras propriedades */
+    margin: 0 auto;
+    max-width: 960px; /* define a largura máxima do nav */
+    background-color: #f8f9fa; /* cor de fundo */
+    font-family: Arial, sans-serif; /* tipo de fonte */
+  }
+  
+  
+  .nav-link {
+    color: #212529; /* cor do texto */
+  }
+  
+  .nav-link.active {
+    font-weight: bold; /* destaca o link ativo */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* cor do texto ao passar o mouse */
+    text-decoration: none; /* remove sublinhado */
+  }
+  
+  .navbar-brand {
+    font-weight: bold; /* destaca o nome da marca */
+  }
+  

@@ -1,8 +1,10 @@
-package br.edu.ifrs.resinga.MeuMercado.domain.model;
+package br.edu.ifrs.resinga.MeuMercado.model;
+
+import java.math.BigDecimal;
 
 public record DadosCadastroProduto(
     // @NotBlank
-    Long codigo, 
+    String codigo, 
 
     // @NotBlank
     String nome, 
@@ -11,7 +13,7 @@ public record DadosCadastroProduto(
     String tipo,
     
     // @NotBlank
-    double valor,
+    BigDecimal valor,
     
     // @NotNull
     int estoque
