@@ -18,10 +18,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link action" href="/formulario">Cadastro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link action" href="/lista_produtos">Listagem</a>
+            <a class="nav-link action" href="/lista_produtos_usuario">Listagem</a>
           </li>
         </ul>
         <ul class="login">
@@ -62,8 +59,6 @@
         <th scope="col">Tipo</th>
         <th scope="col">Valor</th>
         <th scope="col">Estoque</th>
-        <th scope="col">#</th>
-        <th scope="col">#</th>
       </tr>
     </thead>
     <tbody>
@@ -74,11 +69,6 @@
         <td th:text="${produto.valor}"></td>
         <td th:text="${produto.estoque}"></td>
         <td>
-          <a th:href="@{'/edit/'+${produto.codigo}}" >Editar</a>
-        </td>
-        <td>
-          <a th:href="@{'/delet/'+${produto.codigo}}">X</a>
-        </td>
       </tr>
     </tbody>
   </table>

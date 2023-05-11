@@ -1,3 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f9fa;
+  font-size: 18px;
+  
+}
+
+li {
+  list-style-type: none;
+}
+
+.navbar #login{
+  margin-left: auto;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #000;
+  padding: 12px 24px;
+}
+
+.navbar a:hover {
+  color: #fff;
+  background-color: #17a2b8;
+  border-radius: 4px;
+}
+
+.navbar .action {
+  font-weight: bold;
+}
+
 form {
     /* display: flex; */
     padding: 20px;
@@ -5,6 +37,11 @@ form {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     align-items: baseline;
+}
+
+#nome.form-control, #tipo.form-control{
+  display: inline;
+  width: 73%;
 }
 
   label {
@@ -24,7 +61,7 @@ form {
   
   button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #17a2b8;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -33,33 +70,22 @@ form {
   }
   
   button:hover {
-    background-color: #0069d9;
+    background-color: #058295;
   }
-  
 
-  .navbar {
-    /* outras propriedades */
-    margin: 0 auto;
-    max-width: 960px; /* define a largura máxima do nav */
-    background-color: #f8f9fa; /* cor de fundo */
-    font-family: Arial, sans-serif; /* tipo de fonte */
+  h3{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 0px;
   }
-  
-  
-  .nav-link {
-    color: #212529; /* cor do texto */
-  }
-  
-  .nav-link.active {
-    font-weight: bold; /* destaca o link ativo */
-  }
-  
-  .nav-link:hover {
-    color: #007bff; /* cor do texto ao passar o mouse */
-    text-decoration: none; /* remove sublinhado */
-  }
-  
-  .navbar-brand {
-    font-weight: bold; /* destaca o nome da marca */
+
+  .table{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
   
