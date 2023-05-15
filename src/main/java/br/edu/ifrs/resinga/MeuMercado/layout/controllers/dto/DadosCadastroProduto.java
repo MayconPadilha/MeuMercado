@@ -1,4 +1,4 @@
-package br.edu.ifrs.resinga.MeuMercado.model;
+package br.edu.ifrs.resinga.MeuMercado.layout.controllers.dto;
 
 import java.math.BigDecimal;
 

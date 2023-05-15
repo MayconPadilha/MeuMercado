@@ -2,6 +2,7 @@ package br.edu.ifrs.resinga.MeuMercado.model;
 
 import java.math.BigDecimal;
 
+import br.edu.ifrs.resinga.MeuMercado.layout.controllers.dto.DadosCadastroProduto;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

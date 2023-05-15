@@ -47,7 +47,6 @@
         <label for="nome">Buscar por tipo:</label>
         <input type="text" class="form-control" id="tipo" name="tipo" placeholder="Digite o tipo do produto">
         <button type="submit">Buscar</button>
-        <!-- <button type="submit" class="btn btn-primary">Buscar</button> -->
       </form>
     </div>
   </div>
@@ -77,7 +76,7 @@
           <a th:href="@{'/edit/'+${produto.codigo}}" >Editar</a>
         </td>
         <td>
-          <a th:href="@{'/delet/'+${produto.codigo}}">X</a>
+          <a th:href="@{'/delet/'+${produto.codigo}}" onclick="return confirm('Tem certeza que deseja excluir o produto?')">Excluir</a>
         </td>
       </tr>
     </tbody>

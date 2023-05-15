@@ -50,8 +50,11 @@
       <input type="number" id="estoque" name="estoque" required>
       <br>
       <!-- Mensagem de erro -->
-      <div class="form-group" th:if="${errorMessage}">
-        <p class="error-message" th:text="${errorMessage}"></p>
+      <div class="form-group" th:if="${errorMessageCadastro}">
+        <p class="error-message" th:text="${errorMessageCadastro}"></p>
+      </div>
+      <div class="form-group" th:if="${mensagemCadastro}">
+        <p class="cadastro-message" th:text="${mensagemCadastro}"></p>
       </div>
 
       <div class="form-group">

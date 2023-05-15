@@ -6,5 +6,9 @@ import br.edu.ifrs.resinga.MeuMercado.model.Produto;
 public interface ProdutoRepository extends JpaRepository<Produto, Long>{
 
     void deleteByCodigo(String codigo);
+
+    boolean existsByCodigo(String codigo);
+
+    Produto findByCodigo(String codigo);
     
 }
