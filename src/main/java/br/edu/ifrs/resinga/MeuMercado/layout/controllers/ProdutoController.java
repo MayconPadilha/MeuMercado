@@ -84,6 +84,22 @@ public class ProdutoController {
         return mv;
     }
 
+    @GetMapping("/buscarNome")
+    public ModelAndView buscarProdutoPorTipo(@RequestParam String nome) {
+        ModelAndView mv = new ModelAndView("lista_produtos");
+        Stream<Produto> produtoFind = repository.findAll().stream().filter(produto -> nome.equals(produto.getNome())); //pega o codigo do produto e compara com os dados do banco
+        mv.addObject("produtos", produtoFind);
+        return mv;
+    }
+
+    @GetMapping("/buscarTipo")
+    public ModelAndView buscarProdutoPorNome(@RequestParam String tipo) {
+        ModelAndView mv = new ModelAndView("lista_produtos");
+        Stream<Produto> produtoFind = repository.findAll().stream().filter(produto -> tipo.equals(produto.getTipo())); //pega o codigo do produto e compara com os dados do banco
+        mv.addObject("produtos", produtoFind);
+        return mv;
+    }
+
     @GetMapping("/edit/{codigo}")
     public ModelAndView editar(@PathVariable("codigo") String codigo, Model model){
         ModelAndView mv = new ModelAndView("editarProduto");
@@ -122,7 +138,7 @@ public class ProdutoController {
         return mv;
     }
 
-    @GetMapping("/buscarNome")
+    @GetMapping("/buscarNome_usuario")
     public ModelAndView buscarProdutoPorTipoUsuario(@RequestParam String nome) {
         ModelAndView mv = new ModelAndView("lista_produtos_usuario");
         Stream<Produto> produtoFind = repository.findAll().stream().filter(produto -> nome.equals(produto.getNome())); //pega o codigo do produto e compara com os dados do banco
@@ -130,7 +146,7 @@ public class ProdutoController {
         return mv;
     }
 
-    @GetMapping("/buscarTipo")
+    @GetMapping("/buscarTipo_usuario")
     public ModelAndView buscarProdutoPorNomeUsuario(@RequestParam String tipo) {
         ModelAndView mv = new ModelAndView("lista_produtos_usuario");
         Stream<Produto> produtoFind = repository.findAll().stream().filter(produto -> tipo.equals(produto.getTipo())); //pega o codigo do produto e compara com os dados do banco
